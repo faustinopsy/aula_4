@@ -1,6 +1,27 @@
 html{
     font-size: 24px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(13, 248, 185, 0.975);
+    border: solid 5px yellow;
+}
+section{
+    background-color: chocolate;
+    border: solid 2px greenyellow;
+    height: 200px;
+}
+.principal{
+    background-color: rgba(228, 188, 11, 0.975);
+    border: solid 5px rgb(12, 4, 255);
+}
+#app{
+    background-color: rgba(7, 202, 246, 0.975);
+    border: solid 5px rgb(4, 255, 54);
+    padding: 65px 0 0 0;
+}
 h1{
     /* o rem pai de todos = root */
     font-size: 2rem;
@@ -59,3 +80,10 @@ footer{
     height: 200px;
     z-index: 5;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 200px auto;
+}
+   
