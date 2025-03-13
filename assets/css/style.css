@@ -1,0 +1,32 @@
+html{
+    font-size: 24px;
+}
+h1{
+    /* o rem pai de todos = root */
+    font-size: 2rem;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: aliceblue;
+}
+nav{
+    font-size: 16px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    font-size: 2em;
+    color: #007BFF;
+    text-decoration: none;
+}
+  

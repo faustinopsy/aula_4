@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--style css externo-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!--style css interno || css critico -->
+    <style>
+        section{
+            background-color: chocolate;
+            border: solid 2px greenyellow;
+        }
+        main{
+            background-color: rgba(13, 248, 185, 0.975);
+            border: solid 5px yellow;
+        }
+        .principal{
+            background-color: rgba(228, 188, 11, 0.975);
+            border: solid 5px rgb(12, 4, 255);
+        }
+        #app{
+            background-color: rgba(7, 202, 246, 0.975);
+            border: solid 5px rgb(4, 255, 54);
+        }
+    </style>
 </head>
 <body>
-    <main><h1>xxxxxx</h1></main>
-    <main><h1>xxxxxx</h1></main>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="#">Inicial</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  
+    nomeDaTag = nomeSeletor  (prioridade 0,0,1)
+    . = class                (prioridade 0,1,0)
+    # = id                   (prioridade 1,0,0)
+    -->
+    <main class="principal" id="app">
+        <h1>Aqui é o documento principal</h1>
+        <section class="principal">
+            <h2>Aqui é uma seção 1</h2>
+        </section>
+        <section class="w3-card">
+            <h2>Aqui é uma seção 2</h2>
+        </section>
+    </main>
+    <!-- style css iline-->
+    <footer style="background-color: rgb(0, 0, 0); border: 3px dashed red; color:aqua">
+        <h1>Aqui é o rodapé</h1>
+        <ul>
+            <li><a href="#">Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+    </footer>
 </body>
 </html>
