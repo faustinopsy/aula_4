@@ -11,7 +11,10 @@ body{
     box-sizing: border-box;
 }
 header{
-    background-color: aliceblue;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 6;
 }
 nav{
     font-size: 16px;
@@ -22,6 +25,7 @@ nav ul {
 }
 nav ul li {
     display: inline;
+    height: 100px;
     margin-right: 10px;
 }
 nav ul li a {
@@ -29,4 +33,29 @@ nav ul li a {
     color: #007BFF;
     text-decoration: none;
 }
-  
+
+footer{
+    width: 80%;
+    border-top: 5px red solid;
+    border-bottom: 10px dashed green;
+    margin: 20px 5px 7px;
+    padding: 5px 30px 10px 20px;
+}
+/* 
+    relativo
+    absoluto
+    fixed
+    sticked
+*/
+#modal{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    display: block;
+    border: green 2px solid;
+    background-color: rgba(255, 140, 0, 0.799);
+    box-shadow: 3px 6px 6px 2px #3c8889;
+    width: 70%;
+    height: 200px;
+    z-index: 5;
+}

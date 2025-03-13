@@ -12,6 +12,7 @@
         section{
             background-color: chocolate;
             border: solid 2px greenyellow;
+            height: 200px;
         }
         main{
             background-color: rgba(13, 248, 185, 0.975);
@@ -24,10 +25,17 @@
         #app{
             background-color: rgba(7, 202, 246, 0.975);
             border: solid 5px rgb(4, 255, 54);
+            padding: 65px 0 0 0;
         }
     </style>
 </head>
 <body>
+    <div id="modal">
+        <div>
+            <h1>Site em construção</h1>
+            <p>Bem vindo amigo!!!</p>
+        </div>
+    </div>
     <header>
         <nav>
             <ul>
@@ -52,7 +60,7 @@
         </section>
     </main>
     <!-- style css iline-->
-    <footer style="background-color: rgb(0, 0, 0); border: 3px dashed red; color:aqua">
+    <footer>
         <h1>Aqui é o rodapé</h1>
         <ul>
             <li><a href="#">Inicial</a></li>
@@ -60,5 +68,12 @@
             <li><a href="#">Contato</a></li>
           </ul>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            setTimeout(()=>{
+                document.getElementById("modal").style.display = "none"
+            },3000)
+        })
+    </script>
 </body>
 </html>
